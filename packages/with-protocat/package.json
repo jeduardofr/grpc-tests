@@ -1,0 +1,25 @@
+{
+  "name": "with-protocat",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "clean": "rimraf lib/**",
+    "build": "yarn clean && tsc",
+    "watch:ts": "tsc -w",
+    "server:js": "nodemon lib/server.js",
+    "client:js": "nodemon lib/client.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.5.0",
+    "grpc-errors": "^1.1.5",
+    "joi": "^17.5.0",
+    "nodemon": "^2.0.15",
+    "protocat": "^0.6.4"
+  },
+  "devDependencies": {
+    "grpc_tools_node_protoc_ts": "^5.3.2"
+  }
+}

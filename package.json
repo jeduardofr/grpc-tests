@@ -1,0 +1,23 @@
+{
+  "name": "root",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "clean": "lerna run clean",
+    "build": "lerna run build",
+    "watch": "lerna run watch:ts",
+    "server:js": "lerna run server:js",
+    "client:js": "lerna run client:js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "lerna": "^4.0.0",
+    "typescript": "^4.5.4"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
