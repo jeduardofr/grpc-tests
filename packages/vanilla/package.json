@@ -1,7 +1,22 @@
 {
-  "name": "with-protocat",
+  "name": "vanilla",
   "version": "1.0.0",
-  "description": "",
+  "description": "> TODO: description",
+  "author": "jeduardofr <jeduardo.fuentes@alumnos.udg.mx>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/server.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-jeduardofr:jeduardofr/grpc-tests.git"
+  },
   "scripts": {
     "clean": "rimraf lib/**",
     "build": "yarn clean && tsc",
@@ -9,15 +24,11 @@
     "server:js": "nodemon lib/server.js",
     "client:js": "nodemon lib/client.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@grpc/grpc-js": "^1.5.0",
     "grpc-errors": "^1.1.5",
     "joi": "^17.5.0",
     "nodemon": "^2.0.15",
-    "protocat": "^0.6.4",
     "rimraf": "^3.0.2"
   },
   "devDependencies": {
